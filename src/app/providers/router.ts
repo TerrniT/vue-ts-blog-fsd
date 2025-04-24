@@ -4,7 +4,7 @@ import { routes } from '@/pages';
 export const router = createRouter({
   history: createWebHistory(),
   routes,
-  scrollBehavior(to, from, savedPosition) {
+  scrollBehavior(_to, _from, savedPosition) {
     if (savedPosition) {
       return savedPosition;
     } else {
@@ -13,7 +13,7 @@ export const router = createRouter({
   }
 });
 
-router.beforeEach((to, from, next) => {
+router.beforeEach((_to, _from, next) => {
   document.body.classList.add('page-transition');
   setTimeout(() => {
     document.body.classList.remove('page-transition');

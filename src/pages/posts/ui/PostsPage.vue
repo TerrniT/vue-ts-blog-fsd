@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { ref, onMounted, watch } from 'vue';
-import { useRouter } from 'vue-router';
 import { PostCard } from '@/entities/post';
 import { postsApi } from '@/entities/post';
 import { SearchBar } from '@/features/post-search';
